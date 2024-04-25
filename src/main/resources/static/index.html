@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Kino</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1 class="Tittel">Bestill Kinobilletter her: </h1>
+  <br>
+  <div class="row">
+    <div class="col-md-8">
+      <form class="form">
+        <label for="filmValg">Velg film</label>
+        <select id="filmValg">
+          <option value="0">Velg film:</option>
+          <option value="Fast And Furious 1">Fast And Furious 1</option>
+          <option value="Fast And Furious 2">Fast And Furious 2</option>
+          <option value="Fast And Furious 3">Fast and Furious 3</option>
+          <option value="Fast And Furious 4">Fast and Furious 4</option>
+        </select>
+        <span id="ikkeGyldigF" style="color:red"></span>
+        <br><br>
+        <table>
+          <tr>
+            <td>Antall billetter:</td>
+            <td><input type="number" id="antall" name="billetter" size="2"/></td>
+            <td id="ikkeGyldigAntall" style="color:red"></td>
+          </tr>
+          <tr>
+            <td>Fornavn:</td>
+            <td><input type="text" id="fnavn" name="for"/></td>
+            <td id="ikkeGyldigFornavn" style="color:red"></td>
+          </tr>
+          <tr>
+            <td>Etternavn:</td>
+            <td><input type="text" id="enavn" name="etter"/></td>
+            <td id="ikkeGyldigEtternavn" style="color:red"></td>
+          </tr>
+          <tr>
+            <td>Epost:</td>
+            <td><input type="text" id="epost" name="email"/></td>
+            <td id="ikkeGyldigEpost" style="color:red"></td>
+          </tr>
+          <tr>
+            <td>TelefonNr:</td>
+            <td><input type="text" id="telefonNr" name="number"/></td>
+            <td id="ikkeGyldigTlf" style="color:red"></td>
+          </tr>
+        </table>
+      </form>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="kjopBillett()">Bestill Billetter</button>
+    </div>
+    <div class="col-md-12">
+      <br><br>
+      <h3>Alle billetter:</h3>
+      <div id="billettTabell" class="table-responsive"></div>
+      <button type="button" class="btn btn-danger btn-block" onclick="slettAlle()">Slett billettene</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
