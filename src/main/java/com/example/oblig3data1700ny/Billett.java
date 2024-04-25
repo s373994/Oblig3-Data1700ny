@@ -13,7 +13,6 @@ public class Billett {
     public Billett(){
 
     }
-
     public Billett(String film, String antallBilletter, String fnavn, String enavn, String epost, String telefonNr, int id) {
         this.film = film;
         this.antallBilletter = antallBilletter;
