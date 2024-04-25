@@ -1,6 +1,9 @@
 OsloMet Brukernavn: s373994
+
 Fullt Navn: Mustafa Sarshar
+
 Github Repo URL: https://github.com/s373994/Oblig3-Data1700ny.git
+
 Youtube video link: https://youtu.be/yr5tbn3wTXw
 
 Beskrivelse: Obligatorisk oppgave nummer 3 for DATA1700-kurset 
